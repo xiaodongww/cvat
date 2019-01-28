@@ -2164,7 +2164,8 @@ class ShapeView extends Listener {
 
             let stopProp = function(e) {
                 let key = e.keyCode;
-                let serviceKeys = [37, 38, 39, 40, 13, 16, 9, 109];
+                // let serviceKeys = [37, 38, 39, 40, 13, 16, 9, 109];
+                let serviceKeys = [38, 40, 13, 16, 9, 109]; // cancle prevention of left and right arrow
                 if (serviceKeys.includes(key)) {
                     e.preventDefault();
                     return;
